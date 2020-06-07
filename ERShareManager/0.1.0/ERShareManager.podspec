@@ -36,6 +36,6 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit', 'MessageUI', 'Social'
-  s.dependency 'FBSDKShareKit', '~> 6.4.0'
+  s.dependency 'FBSDKShareKit'
   s.dependency 'ERUINotifying'
 end
