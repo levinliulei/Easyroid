@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   s.author           = { 'Easyroid' => '251039187@qq.com' }
   s.source           = { :git => 'https://github.com/levinliulei/EasyroidPods.git', :tag => 'ERShareManager-v0.1.0' }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
+  s.requires_arc     = true
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'ERShareManager/Classes/*.{h,m}'
@@ -36,6 +36,6 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit', 'MessageUI', 'Social'
-  s.dependency 'FBSDKShareKit'
+  s.dependency 'FBSDKShareKit', '~> 6.4.0'
   s.dependency 'ERUINotifying'
 end
